@@ -1,10 +1,11 @@
 import React from "react";
-import "../styles/styles.css"; // Import the CSS file
+import "../styles/styles.css";
 import { FaTwitter, FaFacebook, FaWhatsapp, FaLink } from "react-icons/fa";
 import FeaturedCard from "../components/FeaturedCard";
 import LivePCard from "../components/livePCard";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
 
@@ -38,7 +39,7 @@ const HomePage = () => {
         <p className="release-info">
           Khanm released his debut single "Nightfall" in 2021.
         </p>
-        <button className="btn" style={{marginTop:'40px'}}>Discography</button>
+        <Link to="/music"><button className="btn" style={{marginTop:'40px'}}>Discography</button></Link>
       </div>
      </div>
 
@@ -50,7 +51,7 @@ const HomePage = () => {
               <p className="pageHeads" style={{marginBottom:'150px'}}>Latest Release</p>
               <h1 className="newSongTitle" style={{fontSize:'50px'}}>Main Kaun Hoon</h1>
               <p className="artistName" style={{fontSize:'25px', marginTop:'10px', marginBottom:'20px'}}>Khanm</p>
-              <button className="btn" style={{marginBottom:'90px'}}>Stream/Download</button>
+              <a href="https://distrokid.com/hyperfollow/khanm/main-kaun-hoon" target="_blank"><button className="btn" style={{marginBottom:'90px'}}>Stream/Download</button></a>
             </div>
             <div className="newRel-R">
               <div className="newRel-video">
@@ -112,7 +113,7 @@ const HomePage = () => {
               <FeaturedCard title='The K List' artist='Khanm' cover='../SCA/klist.jpg'/>
               <FeaturedCard title='Mujh Se Ho Zara' artist='Khanm' cover='../SCA/mshz.jpg'/>
             </div>
-            <button className="btn2">Show All</button>  
+            <Link to="/music"><button className="btn2">Show All</button></Link>
           </div>
         </div>
       </div>
@@ -128,7 +129,7 @@ const HomePage = () => {
             <iframe className="videoFrame" src="https://www.youtube.com/embed/oMX_HgGtWiI?si=GYuKxFPC4suTmsf3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe className="videoFrame" src="https://www.youtube.com/embed/uIlJHHnECJI?si=YV6rIzI9yvDNVNJ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <button className="btn2">Show All</button>  
+            <Link to="/videos"><button className="btn2">Show All</button></Link>  
           </div>
         </div>
       </div>
