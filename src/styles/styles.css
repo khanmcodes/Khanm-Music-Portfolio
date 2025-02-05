@@ -852,7 +852,7 @@
   /* margin-bottom: 10px; */
 }
 
-button {
+.next, .prev {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -862,7 +862,7 @@ button {
   font-size: 20px;
 }
 
-button:hover {
+.next:hover, .prev:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
