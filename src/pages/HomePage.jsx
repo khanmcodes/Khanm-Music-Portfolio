@@ -109,9 +109,9 @@ const HomePage = () => {
           <p className="pageHead">Featured</p>
           <div className="content">
             <div className="f-cards">
-              <FeaturedCard title='Kya Kahen' artist='Khanm' cover='../SCA/kk.jpg'/>
-              <FeaturedCard title='The K List' artist='Khanm' cover='../SCA/klist.jpg'/>
-              <FeaturedCard title='Mujh Se Ho Zara' artist='Khanm' cover='../SCA/mshz.jpg'/>
+              <FeaturedCard title='Kya Kahen' artist='Khanm' cover='../SCA/kk.jpg' lnk='https://distrokid.com/hyperfollow/khanm/kya-kahen' />
+              <FeaturedCard title='The K List' artist='Khanm' cover='../SCA/klist.jpg' lnk='https://open.spotify.com/playlist/4akQppRCI66u7c0YbCxK8Q?si=YoHQAsRkSbGMJDEkdLaOnw'/>
+              <FeaturedCard title='Mujh Se Ho Zara' artist='Khanm' cover='../SCA/mshz.jpg' lnk='https://distrokid.com/hyperfollow/khanm/mujh-se-ho-zara-feat-mahnoor-channa-2'/>
             </div>
             <Link to="/music"><button className="btn2">Show All</button></Link>
           </div>

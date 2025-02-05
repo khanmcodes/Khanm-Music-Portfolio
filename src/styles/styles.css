@@ -102,7 +102,17 @@
 
   .f-cards {
     display: flex;
-    gap: 90px;
+    gap: 20px;
+  }
+
+  .featuredCard:hover {
+    border: 1px solid #4a3c4b73;
+  }
+
+  .featuredCard {
+    padding: 30px;
+    border: 1px solid #0f080f00;
+    border-radius: 20px;
   }
 
   .v-cards {
@@ -361,6 +371,7 @@
 
   .f-btn {
     margin-top: 20px;
+    background: none;
     padding: 12px;
     width: 110px;
     color: var(--c5);
