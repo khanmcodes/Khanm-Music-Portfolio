@@ -1,0 +1,56 @@
+html, body {
+  height: 100%; /* Ensure html and body cover the full viewport height */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --c1: #0F080F; 
+  --c2: #282538; 
+  --c3: #4A3C4B;
+  --c4: #75616A; 
+  --c5: #CEC3C1; 
+  --c6: #E6DEDB;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Ensure root takes up at least full viewport height */
+}
+
+.homepage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensure homepage takes full viewport height */
+  /* Removed height: 100vh to allow content to grow */
+}
+
+.App {
+  flex-grow: 1; /* Ensures the content stretches to fill remaining space */
+  background: linear-gradient(to bottom, var(--c6), var(--c5), var(--c4), var(--c3), var(--c2), var(--c1));
+  background-size: cover; /* Ensures the gradient covers the whole page */
+}
+
+/* Scrollbar styling */
+* {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: var(--c4) var(--c1); /* Thumb and track color for Firefox */
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--c4); /* Thumb color */
+  border-radius: 50px; /* Round thumb */
+  border: 3px solid var(--c1); /* Border around thumb for visibility */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* No background on the track */
+}
