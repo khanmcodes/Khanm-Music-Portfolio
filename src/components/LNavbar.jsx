@@ -2,6 +2,7 @@ import React from "react";
 import { FaApple, FaFacebook, FaInstagram, FaYoutube, FaSoundcloud, FaEnvelope, FaSpotify } from "react-icons/fa";
 import "../styles/styles.css"; // Import the CSS file
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; 
 
 function LNavbar() {
 
@@ -23,7 +24,7 @@ function LNavbar() {
   return (
     <div className="navbar">
         <div className={`Hnav ${scrolled ? "scrolled" : ""}`}>
-            <div><h1 className="logoTitle">Khanm</h1></div>
+            <div><Link to='/' style={{textDecoration:'none'}}><h1 className="logoTitle">Khanm</h1></Link></div>
 
             <div className="nav-icons">
                 <a href="https://music.apple.com/us/artist/khanm/1639741390" target="_blank" rel="noopener noreferrer">
@@ -52,10 +53,10 @@ function LNavbar() {
         
         <div className={`Vnav ${scrolled ? "scrolled" : ""}`}>
             <nav className="nav-links">
-                <a href="#music">MUSIC</a>
-                <a href="#videos">VIDEOS</a>
-                <a href="#about">ABOUT</a>
-                <a href="#links">LINKS</a>
+                <Link to="/music">MUSIC</Link>
+                <Link to="/videos">VIDEOS</Link>
+                <Link to="/about">ABOUT</Link>
+                <Link to="/links">LINKS</Link>
             </nav>
         </div>
     </div>
