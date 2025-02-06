@@ -1,29 +1,13 @@
 import React from "react";
 import { FaApple, FaFacebook, FaInstagram, FaYoutube, FaSoundcloud, FaEnvelope, FaSpotify } from "react-icons/fa";
-import "../styles/styles.css"; // Import the CSS file
-import { useEffect, useState } from "react";
+import "../styles/styles.css";
 import { Link, NavLink } from "react-router"; 
 
 function LNavbar() {
 
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="navbar">
-        <div className={`Hnav ${scrolled ? "scrolled" : ""}`}>
+        <div className='Hnav'>
             <div><Link to='/' style={{textDecoration:'none'}}><h1 className="logoTitle">Khanm</h1></Link></div>
 
             <div className="nav-icons">
@@ -51,7 +35,7 @@ function LNavbar() {
             </div>
         </div>
         
-        <div className={`Vnav ${scrolled ? "scrolled" : ""}`}>
+        <div className='Vnav'>
             <nav className="nav-links">
                 <NavLink to="/music" end>MUSIC</NavLink>
                 <NavLink to="/videos" end>VIDEOS</NavLink>
