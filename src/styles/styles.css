@@ -59,12 +59,15 @@
 
   .lp-content {
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
   }
 
   .contact-content {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+    justify-content: center;
   }
 
   .mail-phone {
@@ -105,13 +108,16 @@
   }
 
   .featuredCard:hover {
-    border: 1px solid #4a3c4b73;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: translateY(-5px); /* Optional: Slight lift effect */
   }
 
   .featuredCard {
     padding: 30px;
     border: 1px solid #0f080f00;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
   }
 
   .v-cards {
@@ -179,6 +185,9 @@
 
   .nav-icons {
     padding: 10px;
+    width: 23%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .footer-icons {
@@ -204,6 +213,11 @@
     flex-direction: column;
     gap: 70px;
   }
+
+  .homeIcon {
+    color: var(--c6);
+    padding: 10px;
+  }
   
   .nav-links a {
     color: var(--c6);
@@ -217,12 +231,16 @@
   .nav-links a:hover {
     color: gray;
   }
+
+  .body, html {
+    overflow-x: hidden;
+  }
   
   .homepage {
     position: relative;
-    width: 100vh;
+    width: 100vw;
     min-height: 100vh;
-     overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   .hero {
@@ -245,7 +263,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.226);
     z-index: -1;
   }
 
@@ -807,7 +825,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
 }
 
 .gallery-container {
@@ -1064,8 +1081,25 @@ input, textarea {
   to { transform: translateY(0); opacity: 1; }
 }
 
+.homeIconMob {
+  display: none;
+  /* display: flex;
+  transform: rotate(-90deg);
+  position: relative; */
+}
 
 @media (max-width: 768px) {
+
+  .homeIcon {
+    display: none;
+  }
+
+  .homeIconMob {
+    display: flex;
+    transform: rotate(-90deg);
+    position: relative;
+  }
+
   .footer-container {
     flex-direction: column;
     align-items: center;

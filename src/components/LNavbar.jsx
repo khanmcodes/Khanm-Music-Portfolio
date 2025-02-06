@@ -1,5 +1,5 @@
 import React from "react";
-import { FaApple, FaFacebook, FaInstagram, FaYoutube, FaSoundcloud, FaEnvelope, FaSpotify } from "react-icons/fa";
+import { FaHome, FaApple, FaFacebook, FaInstagram, FaYoutube, FaSoundcloud, FaEnvelope, FaSpotify } from "react-icons/fa";
 import "../styles/styles.css";
 import { Link, NavLink } from "react-router"; 
 
@@ -8,7 +8,11 @@ function LNavbar() {
   return (
     <div className="navbar">
         <div className='Hnav'>
-            <div><Link to='/' style={{textDecoration:'none'}}><h1 className="logoTitle">Khanm</h1></Link></div>
+            <div style={{width:'23%'}}><Link to='/' style={{textDecoration:'none'}}><h1 className="logoTitle">Khanm</h1></Link></div>
+
+            <div className="homeIcon">
+              <Link  to="/" end><FaHome className="icon" /></Link>
+            </div>
 
             <div className="nav-icons">
                 <a href="https://music.apple.com/us/artist/khanm/1639741390" target="_blank" rel="noopener noreferrer">
@@ -41,6 +45,7 @@ function LNavbar() {
                 <NavLink to="/videos" end>VIDEOS</NavLink>
                 <NavLink to="/about" end>ABOUT</NavLink>
                 <NavLink to="/links" end>LINKS</NavLink>
+                <Link   to="/" end><FaHome className='homeIconMob'/></Link>
             </nav>
         </div>
     </div>

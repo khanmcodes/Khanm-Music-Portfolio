@@ -1,6 +1,5 @@
 import React from 'react';
 import "../styles/styles.css"
-// import Footer from '../components/Footer';
 import Link from '../components/Link';
 import { FaApple, FaFacebook, FaInstagram, FaYoutube, FaSoundcloud, FaEnvelope, FaSpotify } from "react-icons/fa";
 
@@ -52,7 +51,6 @@ export default function Links() {
                 <iframe style={{borderRadius:'12px', border: "none"}} src="https://open.spotify.com/embed/artist/5vxQdFbSWYF1Zj99jajZU7?utm_source=generator" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
         </div>
-      {/* <Footer/> */}
     </div>
   )
 }

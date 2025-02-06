@@ -1,12 +1,11 @@
-import React from 'react'
-import { useState } from 'react'
+import React from 'react';
 
 export default function FeaturedCard({ cover, title, artist, lnk }) {
 
   return (
     <div className="featuredCard">
         <div className="f-cover">
-            <img src={cover} style={{width:'250px', borderRadius:'20px', marginBottom:'10px'}} />
+            <img src={cover} style={{width:'250px', borderRadius:'10px', marginBottom:'10px'}} />
         </div>
         <div className='f-songDetails'>
             <h2 style={{marginBottom:'5px'}}>{title}</h2>

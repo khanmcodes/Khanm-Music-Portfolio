@@ -11,7 +11,7 @@ const HomePage = () => {
   const handleHover = (e) => {
     const card = e.currentTarget.children[0];
     const { left, top, width, height } = card.getBoundingClientRect();
-    const x = ((e.clientX - left) / width - 0.5) * 30; // Adjust sensitivity
+    const x = ((e.clientX - left) / width - 0.5) * 30;
     const y = ((e.clientY - top) / height - 0.5) * -30;
 
     card.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
@@ -169,7 +169,7 @@ const HomePage = () => {
               />
             </div>
             <Link to="/music">
-              <button className="btn2">Show All</button>
+              <button className="btn2">Show More</button>
             </Link>
           </div>
         </div>
