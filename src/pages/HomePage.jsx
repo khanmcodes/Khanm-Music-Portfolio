@@ -55,16 +55,12 @@ const HomePage = () => {
             <p className="pageHeads" style={{ marginBottom: "150px" }}>
               Latest Release
             </p>
-            <h1 className="newSongTitle" style={{ fontSize: "50px" }}>
+            <div className="newRel-songDet">
+            <h1 className="newSongTitle" >
               Main Kaun Hoon
             </h1>
             <p
               className="artistName"
-              style={{
-                fontSize: "25px",
-                marginTop: "10px",
-                marginBottom: "20px",
-              }}
             >
               Khanm
             </p>
@@ -76,6 +72,7 @@ const HomePage = () => {
                 Stream/Download
               </button>
             </a>
+            </div>
           </div>
           <div className="newRel-R">
             <div className="newRel-video">
