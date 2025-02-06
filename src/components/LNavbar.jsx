@@ -2,7 +2,7 @@ import React from "react";
 import { FaApple, FaFacebook, FaInstagram, FaYoutube, FaSoundcloud, FaEnvelope, FaSpotify } from "react-icons/fa";
 import "../styles/styles.css"; // Import the CSS file
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link, NavLink } from "react-router"; 
 
 function LNavbar() {
 
@@ -53,10 +53,10 @@ function LNavbar() {
         
         <div className={`Vnav ${scrolled ? "scrolled" : ""}`}>
             <nav className="nav-links">
-                <Link to="/music">MUSIC</Link>
-                <Link to="/videos">VIDEOS</Link>
-                <Link to="/about">ABOUT</Link>
-                <Link to="/links">LINKS</Link>
+                <NavLink to="/music" end>MUSIC</NavLink>
+                <NavLink to="/videos" end>VIDEOS</NavLink>
+                <NavLink to="/about" end>ABOUT</NavLink>
+                <NavLink to="/links" end>LINKS</NavLink>
             </nav>
         </div>
     </div>

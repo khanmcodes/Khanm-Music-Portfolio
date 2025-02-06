@@ -7,24 +7,24 @@ import Music from "./pages/Music";
 import Footer from "./components/Footer";
 import Videos from "./pages/Videos";
 import About from "./pages/About";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router";
 
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <LNavbar />
         <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/music" element={<Music />} />
-            <Route path="/videos" element={<Videos />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/links" element={<Links />} />
+            <Route path="music" element={<Music />} />
+            <Route path="videos" element={<Videos />} />
+            <Route path="about" element={<About />} />
+            <Route path="links" element={<Links />} />
           </Routes>
         <Footer/>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
