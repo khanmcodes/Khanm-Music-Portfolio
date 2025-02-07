@@ -1,5 +1,13 @@
 import React from "react";
-import { FaApple, FaFacebook, FaInstagram, FaYoutube, FaSoundcloud, FaEnvelope, FaSpotify } from "react-icons/fa";
+import {
+  FaApple,
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaSoundcloud,
+  FaEnvelope,
+  FaSpotify,
+} from "react-icons/fa";
 
 const icons = {
   Youtube: <FaYoutube />,
@@ -8,7 +16,7 @@ const icons = {
   Instagram: <FaInstagram />,
   Email: <FaEnvelope />,
   Spotify: <FaSpotify />,
-  SoundCloud: <FaSoundcloud/>
+  SoundCloud: <FaSoundcloud />,
 };
 
 export default function Link({ title, artist, icon, imgsrc, link, cl, cl2 }) {
@@ -16,15 +24,15 @@ export default function Link({ title, artist, icon, imgsrc, link, cl, cl2 }) {
     <a href={link} target="_blank" rel="noopener noreferrer" className="link">
       <div className={`linkFrame ${cl2}`}>
         <div className="linkIconPH">
-            {imgsrc ? (
+          {imgsrc ? (
             <img src={imgsrc} alt={title} className="linkIcon ltimg" />
-            ) : (
+          ) : (
             <div className="linkIcon">{icons[icon]}</div>
-            )}
+          )}
         </div>
         <div className={`${cl} linkTitlePH`}>
-            <div className="linkTitle">{title}</div>
-            <div className="linkArtist">{artist}</div>
+          <div className="linkTitle">{title}</div>
+          <div className="linkArtist">{artist}</div>
         </div>
       </div>
     </a>

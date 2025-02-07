@@ -56,22 +56,16 @@ const HomePage = () => {
               Latest Release
             </p>
             <div className="newRel-songDet">
-            <h1 className="newSongTitle" >
-              Main Kaun Hoon
-            </h1>
-            <p
-              className="artistName"
-            >
-              Khanm
-            </p>
-            <a
-              href="https://distrokid.com/hyperfollow/khanm/main-kaun-hoon"
-              target="_blank"
-            >
-              <button className="btn" style={{ marginBottom: "90px" }}>
-                Stream/Download
-              </button>
-            </a>
+              <h1 className="newSongTitle">Main Kaun Hoon</h1>
+              <p className="artistName">Khanm</p>
+              <a
+                href="https://distrokid.com/hyperfollow/khanm/main-kaun-hoon"
+                target="_blank"
+              >
+                <button className="btn" style={{ marginBottom: "90px" }}>
+                  Stream/Download
+                </button>
+              </a>
             </div>
           </div>
           <div className="newRel-R">
@@ -144,7 +138,7 @@ const HomePage = () => {
       <div className="k-section">
         <div className="inSection featured">
           <p className="pageHead">Featured</p>
-          <div className="content">
+          <div className="hp-content">
             <div className="f-cards">
               <FeaturedCard
                 title="Kya Kahen"
@@ -165,8 +159,10 @@ const HomePage = () => {
                 lnk="https://distrokid.com/hyperfollow/khanm/mujh-se-ho-zara-feat-mahnoor-channa-2"
               />
             </div>
+          </div>
+          <div className="hpMoreBtn">
             <Link to="/music">
-              <button className="btn2">Show More</button>
+              <button className="btn2 hpBtn2">Show More</button>
             </Link>
           </div>
         </div>
@@ -177,10 +173,10 @@ const HomePage = () => {
       <div className="k-section">
         <div className="inSection videos">
           <p className="pageHead">Videos</p>
-          <div className="content">
+          <div className="hp-content">
             <div className="v-cards">
               <iframe
-                className="videoFrame"
+                className="videoFrame m1"
                 src="https://www.youtube.com/embed/g618_J-4Sw8?si=d3_f1OzSI2pfbDBN"
                 title="YouTube video player"
                 frameborder="0"
@@ -198,7 +194,7 @@ const HomePage = () => {
                 allowfullscreen
               ></iframe>
               <iframe
-                className="videoFrame"
+                className="videoFrame m3"
                 src="https://www.youtube.com/embed/uIlJHHnECJI?si=YV6rIzI9yvDNVNJ9"
                 title="YouTube video player"
                 frameborder="0"
@@ -207,8 +203,10 @@ const HomePage = () => {
                 allowfullscreen
               ></iframe>
             </div>
+          </div>
+          <div className="hpMoreBtn">
             <Link to="/videos">
-              <button className="btn2">Show All</button>
+              <button className="btn2 hpBtn2">Show All</button>
             </Link>
           </div>
         </div>

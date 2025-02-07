@@ -1,4 +1,12 @@
-import { FaApple, FaFacebook, FaInstagram, FaYoutube, FaSoundcloud, FaEnvelope, FaSpotify } from "react-icons/fa";
+import {
+  FaApple,
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaSoundcloud,
+  FaEnvelope,
+  FaSpotify,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,32 +18,56 @@ const Footer = () => {
           <p className="footer-subtitle">Contact</p>
           <p className="footer-email">khanm.official@gmail.com</p>
           <div className="footer-icons">
-            <a href="https://music.apple.com/us/artist/khanm/1639741390" target="_blank" rel="noopener noreferrer">
-                <FaApple className="icon" style={{ marginLeft: "0" }} />
+            <a
+              href="https://music.apple.com/us/artist/khanm/1639741390"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaApple className="icon" style={{ marginLeft: "0" }} />
             </a>
-            <a href="https://www.facebook.com/khanmmusic" target="_blank" rel="noopener noreferrer">
-                <FaFacebook className="icon" />
+            <a
+              href="https://www.facebook.com/khanmmusic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className="icon" />
             </a>
-            <a href="https://www.instagram.com/khanmmusic" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="icon" />
+            <a
+              href="https://www.instagram.com/khanmmusic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="icon" />
             </a>
-            <a href="https://open.spotify.com/artist/5vxQdFbSWYF1Zj99jajZU7?si=m3Wt5LS2T6ikM5qIIaSTKw&nd=1" target="_blank" rel="noopener noreferrer">
-                <FaSpotify className="icon" />
+            <a
+              href="https://open.spotify.com/artist/5vxQdFbSWYF1Zj99jajZU7?si=m3Wt5LS2T6ikM5qIIaSTKw&nd=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaSpotify className="icon" />
             </a>
-            <a href="https://soundcloud.com/khan-hp" target="_blank" rel="noopener noreferrer">
-                <FaSoundcloud className="icon" />
+            <a
+              href="https://soundcloud.com/khan-hp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaSoundcloud className="icon" />
             </a>
-            <a href="https://www.youtube.com/@khanm" target="_blank" rel="noopener noreferrer">
-                <FaYoutube className="icon" />
+            <a
+              href="https://www.youtube.com/@khanm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube className="icon" />
             </a>
             <a href="mailto:khanm.official@email.com">
-                <FaEnvelope className="icon" />
+              <FaEnvelope className="icon" />
             </a>
           </div>
         </div>
 
-        <div className="footer-left" style={{marginTop: '35px'}}>
-          <p style={{fontWeight:'100', fontSize:'10px'}}>Discography</p>
+        <div className="footer-left" style={{ marginTop: "35px" }}>
+          <p style={{ fontWeight: "100", fontSize: "10px" }}>Discography</p>
           <p>Music</p>
           <p>Videos</p>
           <p>Albums</p>

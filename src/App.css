@@ -1,47 +1,55 @@
-html, body {
-  height: 100%; /* Ensure html and body cover the full viewport height */
+html,
+body {
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --c1: #0F080F; 
-  --c2: #282538; 
-  --c3: #4A3C4B;
-  --c4: #75616A; 
-  --c5: #CEC3C1; 
-  --c6: #E6DEDB;
+  --c1: #0f080f;
+  --c2: #282538;
+  --c3: #4a3c4b;
+  --c4: #75616a;
+  --c5: #cec3c1;
+  --c6: #e6dedb;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100%; /* Ensure root takes up at least full viewport height */
+  min-height: 100%;
 }
 
 .homepage {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Ensure homepage takes full viewport height */
-  /* Removed height: 100vh to allow content to grow */
+  min-height: 100vh;
 }
 
 .App {
-  flex-grow: 1; /* Ensures the content stretches to fill remaining space */
-  background: linear-gradient(to bottom, var(--c6), var(--c5), var(--c4), var(--c3), var(--c2), var(--c1));
-  background-size: cover; /* Ensures the gradient covers the whole page */
+  flex-grow: 1;
+  background: linear-gradient(
+    to bottom,
+    var(--c6),
+    var(--c5),
+    var(--c4),
+    var(--c3),
+    var(--c2),
+    var(--c1)
+  );
+  background-size: cover;
 }
 
 /* Scrollbar styling */
 * {
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: var(--c4) var(--c1); /* Thumb and track color for Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--c4) var(--c1);
 }
 
 /* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {

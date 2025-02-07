@@ -7,12 +7,11 @@ const images = [
   "/Gallery/4.jpg",
   "/Gallery/6.jpg",
   "/Gallery/7.jpg",
-  "/Gallery/ab2.jpg"
+  "/Gallery/ab2.jpg",
 ];
 
 const Gallery = () => {
-  
-    const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <div>
