@@ -264,14 +264,7 @@ html {
   inset: 0;
   background: url("/background.gif") no-repeat center center/cover;
   z-index: -2;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.226);
-  z-index: -1;
+  filter: saturate(50%);
 }
 
 .hero-content {
