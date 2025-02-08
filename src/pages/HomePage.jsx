@@ -52,9 +52,16 @@ const HomePage = () => {
       <div className="k-section">
         <div className="newRel">
           <div className="newRel-L">
-            <p className="pageHeads" style={{ marginBottom: "150px" }}>
-              Latest Release
-            </p>
+            <div className="ph-newRel">
+              <p className="pageHeads">Latest Release</p>
+            </div>
+            <div
+              className="newRel-coverArt-container-mob"
+              onMouseMove={handleHover}
+              onMouseLeave={resetHover}
+            >
+              <div className="newRel-coverArt-mob"></div>
+            </div>
             <div className="newRel-songDet">
               <h1 className="newSongTitle">Main Kaun Hoon</h1>
               <p className="artistName">Khanm</p>
@@ -62,10 +69,49 @@ const HomePage = () => {
                 href="https://distrokid.com/hyperfollow/khanm/main-kaun-hoon"
                 target="_blank"
               >
-                <button className="btn" style={{ marginBottom: "90px" }}>
-                  Stream/Download
-                </button>
+                <button className="btn stream">Stream/Download</button>
               </a>
+            </div>
+            <div className="newRel-share" style={{ rotate: "0deg" }}>
+              <p className="shareLabel">Share</p>
+              <div className="share-icons">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://distrokid.com/hyperfollow/khanm/main-kaun-hoon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook className="shareIcon icon" />
+                </a>
+
+                <a
+                  href="https://api.whatsapp.com/send?text=Check%20this%20out!%20https://distrokid.com/hyperfollow/khanm/main-kaun-hoon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp className="shareIcon icon" />
+                </a>
+
+                <a
+                  href="https://twitter.com/intent/tweet?url=https://distrokid.com/hyperfollow/khanm/main-kaun-hoon&text=Check%20this%20out!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter className="shareIcon icon" />
+                </a>
+
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(
+                      "https://distrokid.com/hyperfollow/khanm/main-kaun-hoon"
+                    );
+                    alert("Link copied to clipboard!");
+                  }}
+                >
+                  <FaLink className="shareIcon icon" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="newRel-R">

@@ -298,6 +298,18 @@ html {
   transform-style: preserve-3d;
 }
 
+.newRel-coverArt-mob {
+  background: url("/SCA/mkh.jpg") no-repeat center center/cover;
+  position: absolute;
+  z-index: 2;
+  width: 330px;
+  height: 330px;
+  box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease-out;
+  transform-style: preserve-3d;
+  display: none;
+}
+
 .newRel-video {
   width: 260px;
   margin-top: 40px;
@@ -367,6 +379,7 @@ html {
   cursor: pointer;
   transition: background 0.3s ease;
   opacity: 80%;
+  font-weight: 300;
 }
 
 .btn2 {
@@ -377,7 +390,7 @@ html {
   background-color: var(--c5);
   font-size: 14px;
   border: none;
-  border-radius: 18px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background 0.3s ease;
   font-weight: 600;
@@ -1179,6 +1192,18 @@ textarea {
   margin-bottom: 20px;
 }
 
+.newRel-L .newRel-share {
+  display: none;
+}
+
+.pageHeads {
+  margin-bottom: 150px;
+}
+
+.stream {
+  margin-bottom: 90px;
+}
+
 @media (max-width: 768px) {
   .hero {
     height: 100vh;
@@ -1233,6 +1258,7 @@ textarea {
 
   .pageHeads {
     font-size: 12px;
+    margin-bottom: 10px;
   }
 
   .footer-container {
@@ -1333,26 +1359,46 @@ textarea {
     justify-content: center;
     align-items: center;
     bottom: 20px;
-    right: 85px;
+    right: 90%;
+  }
+
+  .newRel-coverArt {
+    display: none;
+  }
+
+  .newRel-coverArt-container-mob {
+    display: flex;
+  }
+
+  .newRel-coverArt-mob {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    position: relative;
   }
 
   .newRel-songDet {
-    position: relative;
-    top: 45px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left: 45px;
   }
 
   .newSongTitle {
-    font-size: 20px;
+    font-size: 5vw;
   }
 
   .artistName {
-    font-size: 12px;
+    font-size: 3vw;
+    margin-bottom: 5px;
+  }
+
+  .ph-newRel {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .newRel-coverArt {
@@ -1365,9 +1411,10 @@ textarea {
   }
 
   .newRel-share {
-    left: -10px;
-    top: 55px;
+    position: static;
     font-size: 10px;
+    display: flex;
+    justify-content: center;
   }
 
   .share-icons .icon {
@@ -1654,5 +1701,32 @@ textarea {
 
   .form-container {
     width: 265px;
+  }
+
+  .newRel-coverArt-mob {
+    display: flex;
+  }
+
+  .newRel-coverArt {
+    display: none;
+  }
+
+  .newRel-L .newRel-share {
+    display: flex;
+  }
+
+  .newRel-R {
+    display: none;
+  }
+
+  .newRel-L {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .stream {
+    margin-bottom: 40px;
   }
 }
